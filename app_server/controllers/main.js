@@ -1,9 +1,8 @@
 /* GET homepage */
 const index = (req, res) => {
-    res.render('index', { title: 'Express2' });
-  };
+  res.render('index', { title: 'Express2' });
+};
 
-  module.exports = {
-   index
-  };
-  
+module.exports = {
+  index
+};
