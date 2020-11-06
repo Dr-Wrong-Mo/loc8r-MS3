@@ -20,7 +20,11 @@ legend {
 
 .navbar-light .navbar-toggler {
   color: white;
-  border-color: white;
+  border-color: transparent;
+}
+
+.navbar-toggler-iconn {
+  color: white;
 }
 
 .navbar-light .navbar-toggler-icon {
