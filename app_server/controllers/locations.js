@@ -133,10 +133,12 @@ const getLocationInfo = (req, res, callback) => {
   request(requestOptions, (err, { statusCode }, body) => {
     let data = body;
     if (statusCode === 200) {
+      
       data.coords = {
-        lng: body.coords[0],
-        lat: body.coords[1],
+        lng: body.coords.coordinates[0],
+        lat: body.coords.coordinates[1],
       };
+      console.log('testashjdfaukih', data.coords);
       callback(req, res, data);
     } else {
       showError(req, res, statusCode);
